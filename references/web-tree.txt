@@ -1,0 +1,56 @@
+SPLASH SCREEN
+
+HOMEPAGE
+	-MUSIC
+		-Web player
+	-WIKI
+		World
+			Earth
+			(redacted)*
+			(redacted)*
+			(redacted)*
+	Characters
+		Riri
+		Alisyn
+		(redacted)*
+		Maya
+		Tracey
+		Goji
+		Marika
+		Isaac
+		Bee
+		Dahlia
+		Judas
+		Frax
+		Spencer
+		Mick
+		Vlad
+		Button (wish i knew their chosen name irl)
+		Nat
+		Patrick
+		Outercosm (same here)
+		Trndy (same here)
+		(redacted)*
+		(redacted)*
+	Items
+		Treasure Box
+		Balloon
+		Earring
+		Riri’s Bike
+		Riri’s Rig
+		Cassette
+		(redacted)*
+		(redacted)*
+	Music
+		ReCodePop! [Disc II]
+		ReCodePop! [Disc I]
+		Re:Dline
+		(singles listed by release)
+	SOCIAL
+		All socials
+	MERCH
+		Will provide merch site link
+	CONTACT
+		Generic contact info
+
+*(redacted items will have a silhouette like “who’s that pokemon?” style)
