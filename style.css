@@ -2,12 +2,14 @@
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 300px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
-  overflow: auto;
-}
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  }
 
 /* Sidebar links */
 .sidebar a {
@@ -21,12 +23,20 @@
 .sidebar a.active {
   background-color: #04AA6D;
   color: white;
+  align-self: end;
+  transform: scale(1.25);
+  width: 125%;
+  text-align: end;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
+  align-self: end;
+  transform: scale(1.25);
+  width: 125%;
+  text-align: end;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -54,3 +64,20 @@ div.content {
     float: none;
   }
 }
+
+
+    .geeks {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+      
+    .geeks img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+      
+    .geeks:hover img {
+        transform: scale(1.5);
+    }
