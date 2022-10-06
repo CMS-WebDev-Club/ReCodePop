@@ -81,3 +81,4 @@ div.content {
     .geeks:hover img {
         transform: scale(1.5);
     }
+    p.solid {border-style: solid;}
