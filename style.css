@@ -1,38 +1,15 @@
 /* The side navigation menu */
-body, html {
-  height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-.blurred{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  filter: blur(3px);
-  z-index: -1;
-}
-.no-blur{
- filter: blur(0);
-}
 .sidebar {
   margin: 0;
   padding: 0;
   width: 300px;
-  background-color: #f1f1f1;
-  position: relative;
+  background-color:rgba(266,255,255,.3);
+  position: fixed;
   height: 100%;
   overflow: visible;
   display: flex;
   flex-direction: column;
-  z-index: -1;
-  /*-webkit-filter: blur(8px);*/
-  opacity:0.7 ;
-}
-
+  }
 
 /* Sidebar links */
 .sidebar a {
@@ -40,7 +17,6 @@ body, html {
   color: black;
   padding: 16px;
   text-decoration: none;
-  z-index: 2;
   
 }
 
@@ -56,14 +32,16 @@ body, html {
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #555;
+  background-color: rgba(100,100,100,.5);
   color: white;
   align-self: end;
   transform: scale(1.25);
   width: 125%;
   text-align: end;
-  filter: blur(0);
+  border: 15px rgba(200,200,200,.3);
+  border-radius: 2px;
 }
+
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-left: 200px;
@@ -78,14 +56,8 @@ div.content {
     height: auto;
     position: relative;
   }
-
-  .sidebar a {
-    float: left;
-  }
-
-  div.content {
-    margin-left: 0;
-  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -96,22 +68,24 @@ div.content {
   }
 }
 
-.bg-img {
 
-  background-image: url("assets/grass.gif");
-  /* /* Add the blur effect */
+    .geeks {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+      
+    .geeks img {
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+    }
+      
+    .geeks:hover img {
+        transform: scale(1.5);
+    }
+    p.solid {border-style: solid;}
 
-  
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-p.solid {
-  border-style: solid;
-}
+    body {
+      background-image: url("/assets/grass.gif"); 
+    }
