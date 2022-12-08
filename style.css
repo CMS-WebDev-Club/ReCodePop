@@ -89,3 +89,17 @@ div.content {
     body {
       background-image: url("/assets/grass.gif"); 
     }
+
+    .mediaplayer{
+      padding-left: 62em;
+      padding-top: 2em;
+    }
+
+    .amediaplayer {
+      border-radius: 5em;
+      background-color: black;
+      padding-top: 5em;
+      width: 20em;
+      height: 4em;
+      color: white
+    }
