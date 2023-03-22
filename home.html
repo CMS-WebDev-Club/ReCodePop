@@ -1,43 +1,16 @@
 <!DOCTYPE html>
 <html>
+
+<head>
   <link rel="stylesheet" href="style.css">
-
-
-<!-- The sidebar -->
-<div class="sidebar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-
-<!-- Page content -->
-<div class="content">
-
-
-
-
-
-
-<!--  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0" />
-         
-    <title>
-        How to Zoom an Image on
-        Mouse Hover using CSS?
-    </title>
-</head>-->
- 
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
 <style>
   body {
-    background-image: url("./assets/grass.gif"); 
-    
-  }   
-</style>     
-
+    background-image: url("./assets/grass.gif");
+  }
+</style>
 
 <body>  
   <script src="main.js"></script>
@@ -48,8 +21,15 @@
   
 </div>
 
-</div>
-
+      <!-- Define the section for displaying the volume slider-->
+      <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
