@@ -50,7 +50,7 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played
 let track_list = [
   {
-    name: "will you remember me? (feat. fishdinner)",
+    name: "closer (feat. outercosm & Patrick O'neil)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/01.mp3",
@@ -59,7 +59,7 @@ let track_list = [
     bio: "A wizard of audio engineering, Maya is a longtime friend of Riri and a staple in her community as a mysterious master of sound. Blurring vocals into synths and creating complex soundscapes is her forte, and no one can come close. Riri and others wonder if she truly is magic, a question Maya finds a way to dodge time and time again…",
   },
   {
-    name: "out of my head (feat. tracey brakes)",
+    name: "decibel (feat.food house)",
     artist: "DJ Re:Code",
     image: "Image URL",
     lyrics: '<p> I can feel \r\n Out of my Words that I said \r\n Tell me the truth \r\n \r\n I can feel \r\n Out of my head \r\n Things that I said \r\n Make me aloof\r\n Tell me the truth\r\n Live through me\r\n Can\'t see (awoo)\r\n Tell me the truth\r\n\r\n I can feel\r\n Out of my head\r\n Things that I said\r\n Make me aloof\r\n Tell me the truth\r\n Live through me\r\n Can\'t see (awoo)\r\n Tell me the truth\r\n\r\n I can feel\r\n Out of my head\r\n Things that I said\r\n Make me aloof\r\n Tell me the truth\r\n\r\n Tell me the <a href="hiddenmessages/hiddenmessage1.html">truth</a>\r\n\r\n May the sea hide my sorrow\r\n Pray poseidon feels not shallow\r\n These bones unfit and hollow\r\n Foreign vessel interloper\r\n Hide behind, crumbs I find\r\n Scattered pieces of a broken lifetime\r\n Some day I, I will try\r\n To build a bridge between my body and my mind<p>',
@@ -68,7 +68,7 @@ let track_list = [
     bio: "Twitter celebrity and Los Angeles socialite, Tracey is one of Riri\'s best friends and collaborators. She struts her stuff across the web and is known far and wide for her incredible beatcraft and sample packs, community organizing, and just being an all around babe. Riri has fond memories eating hot wings and getting plastered with her bestie and when the two are together all hell breaks loose - the two are a powerhouse when together and everyone around them wonders why they live across the country from one another.",
   },
   {
-    name: "keeper (feat. goji! & BIO)",
+    name: "distance (feat. KONG)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/03.mp3",
@@ -78,7 +78,7 @@ let track_list = [
    
   },
   {
-    name: "adhd (feat. tobre)",
+    name: "don't sleep (feat. VLAD)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/04.mp3",
@@ -87,7 +87,7 @@ let track_list = [
     bio: " One of Riri\'s best and trusted friends, Londonite Isaac is a pop icon and lyrical and production genius. Co-founding Rock Angelz and having worked together on the classic pop anthem \"Love Connect,\" Isaac and Riri are an inseparable duo and are happy to be reunited again on ReCodePop! Riri, possessed by Isaac\'s classic \"ILYL,\" unable to stop singing its infectious chorus, dm\'d Isaac out of obsessive fervor desperate to work together, and ever since the two hit it off and have been in a bestie trio with the legendary Ryl0 and other pop icons. Isaac is a master of camp, and his connections to the drag community and the trans community in England show his devotion to queer craft. Riri has been dying to fly to London to spend some time with her bestie, but things just keep getting in the way.",
   },
   {
-    name: "surrender (feat. dynastic)",
+    name: "fall out",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/05.mp3",
@@ -96,7 +96,7 @@ let track_list = [
     bio: "Punkstar, rockstar, hyperpop star - no matter what you want to call Bee their skill is unmatched in all arenas. A member of I\'m Letting Unseen Forces Take the Wheel and an incredible artist in their own right, Bee met Riri through her hunt to find someone to scream on a track at the last minute, only to discover the two work powerfully in tandem and have since become fast friends. Twitter comedian and a hilarious presence to be around, Riri admires Bee\'s work ethic and style and wishes the two worked more, and plan to write guitar work together in the near future (Riri secretly hoping some of Bee\'s amazing guitar skills will rub off on her.)",
   },
   {
-    name: "treasure box (feat. iris day)",
+    name: "i spy (feat. Left at London)",
     artist: "DJ Re:Code",
     image: "Image URL",
     lyrics: '<p> I want some peace of mind \r\n Am I as good as her or shall I end my life \r\n This life unfair or am I a waste of time \r\n I guess that I just suck, why am I not surprised? \r\n \r\n \r\n Baby I don\'t wanna talk a lot \r\n Baby I just wanna show you that it hurts too much to cry \r\n And I don\'t wanna tell you much \r\n Baby I just wanna show you that it hurts a lot sometimes \r\n \r\n \r\n And it\'s so hard to stay offline \r\n Every day it\'s like im hanging by a lifeline \r\n All my friends always growing on the timeline \r\n And I\'m stuck right here in this grave of mine \r\n \r\n \r\n And I\'m stuck right here in this grave of mine \r\n \r\n \r\n I want some peace of mind \r\n Am I as good as her or shall I end my life \r\n This life unfair or am I a waste of time \r\n I guess that I just suck, why am I not surprised? \r\n \r\n \r\n Baby I don\'t wanna talk a lot \r\n Baby I just wanna show you that it hurts too much to cry \r\n And I don\'t wanna tell you much \r\n Baby I just wanna show you that it hurts a lot sometimes \r\n \r\n \r\n And it\'s so hard to stay offline \r\n Every day it\'s like im hanging by a <a href="hiddenmessages/hiddenmessage5.html">lifeline</a> \r\n All my friends always growing on the timeline \r\n And I\'m stuck right here in this grave of mine \r\n </p>',
@@ -105,7 +105,7 @@ let track_list = [
     bio: "In truth, Riri doesn\'t know much about Melancholia, besides that she\'s a South African lyrical prodigy and emo genius. Serious and to the point, Riri has immense respect for Mela and her influence in the scene is immense, and Riri is looking forward to a trip to see both her and their longtime mutual friend Boxkitty.",
   },
   {
-    name: "threads [azure sky]",
+    name: "just like you (feat. BIO & mickelbach)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/07.mp3",
@@ -114,7 +114,7 @@ let track_list = [
     bio: "DJ, producer, artist, performer and community organizer - Re:Code (also known as Riri by those close to her) is a jack of all trades, running from one exciting project to the next. She\'s worked with artists near and far, expanding her catalog and planning large scale community projects with her group the Rock Angelz. A lover of 90\'s grunge, 2000\'s pop, bloghouse, dubstep and hyperpop, Riri tries to blend as many of her influences into each of her projects,working to create a musical style all her own, recently dubbing it \"Recodepop.\" Her friends might describe her as extroverted, friendly, bubbly, even explosive at times, but alone she can be very quiet and anxious, and loves her alone time to spend tinkering on remixes and planning months into the future, daydreaming. A trans lesbian, Riri is extremely proud of her identity and makes sure her presence is known wading through the vast community, embracing the challenges she may face along the way. Her (lesbian) boyfriend would describe her as stubborn, bullheaded, yet extremely determined and affectionate, and he loves watching Riri fix her motorbike and take long cat naps. The only thing he doesn\'t seem to know is the details of Riri\'s clouded past, which according to her she remembers very little of. All he knows for sure is Riri left home at a young age and has been reinventing herself ever since, producing and DJing in the underground for many years. He also claims Riri can see ghosts, which she always chalks up to dissociating when on stage or writing music - while in the zone."
   },
   {
-    name: "45 (feat. mothgirl)",
+    name: "of course, i'll remember you",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/08.mp3",
@@ -123,7 +123,7 @@ let track_list = [
     bio:"Despite having known Astra for well under a year\'s span, Astra and Riri have become besties and have worked both through the web and together in person. The immensely tall and stunning moth woman never ceases to surprise Riri with her talents and can seemingly write captivating music in almost any genre, and the two are regularly chatting on the timeline and shooting the shit together in text. Riri wishes Tracey could come visit so the three could party together, as all three of their energies would likely gel into a hilarious blend of internet nonsense and fun. Riri has immense respect for Astra\'s unflinching seriousness when it comes to internet drama and feels grounded by her presence.",
   },
   {
-    name: "near",
+    name: "something to wait for (feat. Button Maker)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/09.mp3",
@@ -133,7 +133,7 @@ let track_list = [
 
   },
   {
-    name: "out of my head [pt. 2] (feat. 65finally)",
+    name: "waltz (feat. trndytrndy, tracey brakes, dynastic)",
     artist: "DJ Re:Code",
     image: "Image URL",
     path: "assets/mp3/10.mp3",
