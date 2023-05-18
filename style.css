@@ -95,9 +95,9 @@ p.solid {
   border-style: solid;
 }
 
-body {
+/* body {
   background-image: url("/assets/grass.gif");
-}
+} */
 
 .mediaplayer {
   padding-left: 75%;

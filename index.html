@@ -7,12 +7,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <style>
-  body {
-    background-image: url("./assets/difficult.gif"); background-size: cover;
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
   }
 </style>
-
 <body>
+  <video id="background-video" autoplay loop muted>
+    <source src="assets/loop.mov" type="video/mp4">
+    </video>
   <div class="sidebar">
     <a href="#home">Home</a>
     <a href="#news">News</a>
