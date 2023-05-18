@@ -22,9 +22,9 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
-let track_lyrics = document.querySelector(".trackLyrics");
-let track_bio = document.querySelector(".bio");
-let track_feature = document.getElementById("feature");
+// let track_lyrics = document.querySelector(".trackLyrics");
+// let track_bio = document.querySelector(".bio");
+// let track_feature = document.getElementById("feature");
 
 //jank way to see if page has initially loaded by setting this to true on load
 let firstLoad = true;
@@ -161,9 +161,9 @@ function loadTrack(track_index) {
   //    "url(" + track_list[track_index].image + ")";
   track_name.textContent = track_list[track_index].name;
   // track_artist.textContent = track_list[track_index].artist;
-  track_lyrics.innerHTML = track_list[track_index].lyrics;
-  track_bio.textContent = track_list[track_index].bio;
-  track_feature.src= track_list[track_index].featPath;
+  // track_lyrics.innerHTML = track_list[track_index].lyrics;
+  // track_bio.textContent = track_list[track_index].bio;
+  // track_feature.src= track_list[track_index].featPath;
   
   // Set an interval of 1000 milliseconds
   // for updating the seek slider
@@ -211,7 +211,7 @@ function playTrack() {
   isPlaying = true;
   
   // Replace icon with the pause icon
-  playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+  playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-3x"></i>';
 }
   
 function pauseTrack() {
@@ -220,7 +220,7 @@ function pauseTrack() {
   isPlaying = false;
   
   // Replace icon with the play icon
-  playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+  playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-3x"></i>';
 }
   
 function nextTrack() {

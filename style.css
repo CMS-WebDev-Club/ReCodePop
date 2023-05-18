@@ -3,13 +3,13 @@
   margin: 0;
   padding: 0;
   width: 300px;
-  background-color:rgba(266,255,255,.3);
+  background-color: rgba(266, 255, 255, .3);
   position: fixed;
   height: 100%;
   overflow: visible;
   display: flex;
   flex-direction: column;
-  }
+}
 
 /* Sidebar links */
 .sidebar a {
@@ -17,7 +17,7 @@
   color: black;
   padding: 16px;
   text-decoration: none;
-  
+
 }
 
 /* Active/current link */
@@ -32,13 +32,13 @@
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: rgba(100,100,100,.5);
+  background-color: rgba(100, 100, 100, .5);
   color: white;
   align-self: end;
   transform: scale(1.25);
   width: 125%;
   text-align: end;
-  border: 15px rgba(200,200,200,.3);
+  border: 15px rgba(200, 200, 200, .3);
   border-radius: 2px;
 }
 
@@ -56,8 +56,14 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -69,37 +75,200 @@ div.content {
 }
 
 
-    .geeks {
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-        margin: 0 auto;
-    }
-      
-    .geeks img {
-        width: 100%;
-        transition: 0.5s all ease-in-out;
-    }
-      
-    .geeks:hover img {
-        transform: scale(1.5);
-    }
-    p.solid {border-style: solid;}
+.geeks {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
 
-    body {
-      background-image: url("/assets/grass.gif"); 
-    }
+.geeks img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
 
-    .mediaplayer{
-      padding-left: 62em;
-      padding-top: 2em;
-    }
+.geeks:hover img {
+  transform: scale(1.5);
+}
 
-    .amediaplayer {
-      border-radius: 5em;
-      background-color: black;
-      padding-top: 5em;
-      width: 20em;
-      height: 4em;
-      color: white
-    }
+p.solid {
+  border-style: solid;
+}
+
+body {
+  background-image: url("/assets/grass.gif");
+}
+
+.mediaplayer {
+  padding-left: 75%;
+  padding-top: 2em;
+}
+
+.amediaplayer {
+  border-radius: 50%;
+  background-color: black;
+  width: 20em;
+  height: 10em;
+  color: white;
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.material-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+/* Player CSS */
+.player {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 5em;
+  background-color: black;
+  padding-top: 5em;
+  width: 20em;
+  height: 4em;
+  color: white
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2.5em;
+
+}
+
+.row{
+  display:inline-flex;
+  flex-direction: row;
+  height: 2.5em;
+
+}
+
+.playpause-track,
+.prev-track,
+.next-track {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  opacity: 0.8;
+  /* Smoothly transition the opacity */
+  transition: opacity .4s;
+}
+
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+
+.seek_slider,
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  border: black solid 1px;
+  border-radius: .5em;
+  padding: .5em .5em;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 10px;
+}
+
+/* Change the mouse cursor to a pointer
+   when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
+
+/* Styles to Rebuild Page */
+.trackHeader {
+  font-size: 1.5em;
+}
